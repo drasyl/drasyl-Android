@@ -1,0 +1,17 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+        // Added maven SNAPSHOT repo for drasyl SNAPSHOT versions
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        jcenter()
+    }
+}
+rootProject.name = "drasyl Android Test"
+include ':app'
