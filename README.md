@@ -1,8 +1,10 @@
-[<img src="https://docs.drasyl.org/master/assets/img/logo.svg" alt="drasyl" width="200"/>](https://drasyl.org)
+[<img src="https://docs.drasyl.org/img/logo-text.svg" alt="drasyl" width="200"/>](https://drasyl.org)
 
 [Website](https://drasyl.org) |
 [Documentation](https://docs.drasyl.org) |
-[Javadoc](https://api.drasyl.org)
+[Javadoc](https://api.drasyl.org) |
+[Contributing](CONTRIBUTING.md) |
+[Changelog](CHANGELOG.md)
 
 # APK
 
