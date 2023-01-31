@@ -2,10 +2,11 @@ package org.drasyl.android.chat.models;
 
 import com.stfalcon.chatkit.commons.models.IMessage;
 import com.stfalcon.chatkit.commons.models.IUser;
-
-import org.drasyl.crypto.Hashing;
+import org.drasyl.util.Murmur3;
 
 import java.util.Date;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class MessageWrapper implements IMessage {
     private final String message;
@@ -20,7 +21,7 @@ public class MessageWrapper implements IMessage {
 
     @Override
     public String getId() {
-        return Hashing.murmur3x32Hex(message.substring(0, Math.min(15, message.length())));
+        return new String(Murmur3.murmur3_x86_32BytesLE(message.substring(0, Math.min(15, message.length())).getBytes()), UTF_8);
     }
 
     @Override
